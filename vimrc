@@ -71,3 +71,11 @@ let g:pymode_indent = 1
 let g:pymode_folding = 1
 
 map <C-k><C-b> :NERDTreeToggle<CR>
+
+" pymode auto completion
+let g:pymode_rope_completion = 1
+let g:pymode_rope_completion_on_dot = 1
+let g:pymode_rope_completion_bind = '<C-Space>'
+let g:pymode_rope_autoimport = 1
+let g:pymode_rope_autoimport_modules = ['os', 'datetime', 'django', 'math']
+let g:pymode_rope_autoimport_import_after_complete = 1
