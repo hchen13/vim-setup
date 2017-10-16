@@ -25,3 +25,19 @@ set hlsearch            " highlight matches
 " highlight last inserted text
 nnoremap gV `[v`]
 
+" setting Vundle
+set nocompatible 
+filetype off            
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
+
+" All of your plugins must be added before the following line
+call vundle#end()
+filetype plugin indent on
