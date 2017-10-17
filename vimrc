@@ -80,3 +80,8 @@ let g:pymode_rope_completion_bind = '<C-Space>'
 let g:pymode_rope_autoimport = 0
 let g:pymode_rope_autoimport_modules = ['os', 'datetime', 'django', 'math']
 let g:pymode_rope_autoimport_import_after_complete = 0
+
+" youcompleteme configs
+let g:ycm_python_binary_path = '/usr/bin/python3'
+let g:ycm_autoclose_preview_window_after_completion = 1
+map <C-y> :YcmCompleter GoToDefinitionElseDeclaration<CR>
