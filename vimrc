@@ -46,6 +46,7 @@ Plugin 'klen/python-mode'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'Valloric/YouCompleteMe'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 " All of your plugins must be added before the following line
@@ -73,9 +74,9 @@ let g:pymode_folding = 1
 map <C-k><C-b> :NERDTreeToggle<CR>
 
 " pymode auto completion
-let g:pymode_rope_completion = 1
-let g:pymode_rope_completion_on_dot = 1
+let g:pymode_rope_completion = 0
+let g:pymode_rope_completion_on_dot = 0
 let g:pymode_rope_completion_bind = '<C-Space>'
-let g:pymode_rope_autoimport = 1
+let g:pymode_rope_autoimport = 0
 let g:pymode_rope_autoimport_modules = ['os', 'datetime', 'django', 'math']
-let g:pymode_rope_autoimport_import_after_complete = 1
+let g:pymode_rope_autoimport_import_after_complete = 0
